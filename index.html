@@ -1,6 +1,6 @@
-<html>
+<html lang="ja">
 <head>
-<title>������ʂƂ��悭�킩��Ȃ��l�̂��߂́A���ӂ�git����</title>
+<title>黒い画面とかよくわからない人のための、ゆるふわgit入門</title>
 <meta charset="Shift_JIS" />
 </head>
 <body>
@@ -30,364 +30,364 @@ ul{list-style:disc;list-style-position:inside;margin-left:1.5em;}
 .box03 li{margin-bottom:0.5em;}
 .box04{margin-bottom:2em;}
 </style>
-<h1>������ʂƂ��悭�킩��Ȃ��l�̂��߂́A���ӂ�git����</h1>
+<h1>黒い画面とかよくわからない人のための、ゆるふわgit入門</h1>
 <p class="box05">by SHOKO OYAMADA (<a href="http://twitter.com/chocolatina" target="_blank">chocolatina</a>) @ paperboy&co.<span>{</span></p>
 <div class="box">
-	<h2>���̎����̑Ώ�</h2>
+	<h2>この資料の対象</h2>
 	<ul>
-		<li>Subversion���g�������Ƃ�����l</li>
-		<li>Git�Ƃ��悭�킩��Ȃ��l</li>
-		<li>�ł�github�̃A�J�E���g�͎����Ă�l</li>
-		<li>Windows���[�U�[�̃f�U�C�i�[</li>
+		<li>Subversionを使ったことがある人</li>
+		<li>Gitとかよくわからない人</li>
+		<li>でもgithubのアカウントは持ってる人</li>
+		<li>Windowsユーザーのデザイナー</li>
 	</ul>
 </div>
 <div class="box">
-	<h2>git�Ƃ́H</h2>
-	<p>SVN�̂悤�ȃo�[�W�����Ǘ��V�X�e���̂��܂ǂ��̂��<br />
-		�g����ƃ��e��炵���B���ǃ��e���o�����Ȃ��B<br />
-		SVN�Ƃ̓��|�W�g���̎������Ȃǂ�������ƈႤ<br />
-		�ʂɃv���O��������Ȃ��Ă������ȍX�V�������Ǘ����Ă悢�B</p>
+	<h2>gitとは？</h2>
+	<p>SVNのようなバージョン管理システムのいまどきのやつ<br />
+		使えるとモテるらしい。けどモテた覚えがない。<br />
+		SVNとはリポジトリの持ち方などがちょっと違う<br />
+		別にプログラムじゃなくてもいろんな更新履歴を管理してよい。</p>
 </div>
 <div class="box">
-	<h2>�o�[�W�����Ǘ��Ƃ́H</h2>
-	<p>�X�V�����⍷�����������Ȃ��悤�ɁA<br />
-		�݂�Ȃ����ǂ��J���ł���悤�Ɏg���Ă���@�\�B<br />
-		���ł����ۂ͍�������������܂��ˁB</p>
+	<h2>バージョン管理とは？</h2>
+	<p>更新履歴や差分が混乱しないように、<br />
+		みんなが仲良く開発できるように使っている機能。<br />
+		※でも実際は混乱したりもしますね。</p>
 </div>
 <div class="box">
-	<h2>���|�W�g���Ƃ́H</h2>
-	<p>�X�V���������߂Ă����ꏊ�ł��B<br />
-		git�ł́A���|�W�g���ɂ�2��ނ���܂��B<br />
-		�u�����̍�Ɨp���|�W�g���v��<br />
-		�u���J�p���|�W�g���v�ł��B</p>
-	<p>�����́A<br />
-		heteml�T�[�o�������̍�Ɨp���|�W�g��<br />
-		github�����J�p���|�W�g��<br />
-		�Ƃ��Ęb�����܂��B</p>
+	<h2>リポジトリとは？</h2>
+	<p>更新履歴をためておく場所です。<br />
+		gitでは、リポジトリには2種類あります。<br />
+		「自分の作業用リポジトリ」と<br />
+		「公開用リポジトリ」です。</p>
+	<p>今日は、<br />
+		hetemlサーバ＝自分の作業用リポジトリ<br />
+		github＝公開用リポジトリ<br />
+		として話をします。</p>
 </div>
 <div class="box">
-	<h2>github�Ƃ́H</h2>
-	<p>git�ŊǗ������X�V������u���Ă����ꏊ�B<br />
-		�����������̂�������񂶂�Ȃ��A<br />
-		�J���r���̗�����������B<br />
-		���i�����Ȃ������̃\�[�X�R�[�h��������B<br />
-		���������傱���傱�����̂ŁA�J�����Ă�I�����o����̂ŃG���W�j�A�ɐl�C�B<br />
-		�l�̃\�[�X�R�[�h�Ɏ�����đ���������ł���炵���B<br />
-		�ʂɃv���O��������Ȃ��Ă������ȍX�V�������Ǘ����Ă悢�B<br />
-		�ł��������L�Ƃ����Ǘ�����̂͂�߂܂��傤�B</p>
+	<h2>githubとは？</h2>
+	<p>gitで管理した更新履歴を置いておく場所。<br />
+		完成したものを見せるんじゃなく、<br />
+		開発途中の履歴を見せる。<br />
+		普段見えない裏側のソースコードも見える。<br />
+		履歴をちょこちょこ送れるので、開発してる！感が出せるのでエンジニアに人気。<br />
+		人のソースコードに手を入れて送ったりもできるらしい。<br />
+		別にプログラムじゃなくてもいろんな更新履歴を管理してよい。<br />
+		でも交換日記とかを管理するのはやめましょう。</p>
 </div>
 <div class="box">
-	<h2>�����̖ڕW</h2>
-	<p>heteml�ɒu�����T�C�g��<br />
-		git�Ńo�[�W�����Ǘ�����<br />
-		github��push����<br />
-		���e�悤<br />
-�����e�邩�ǂ����͕�����Ȃ�</p>
+	<h2>今日の目標</h2>
+	<p>hetemlに置いたサイトを<br />
+		gitでバージョン管理して<br />
+		githubにpushして<br />
+		モテよう<br />
+※モテるかどうかは分からない</p>
 	<p><img src="img/img01.gif" alt="" /></p>
 </div>
 <div class="box">
-	<h2>����</h2>
+	<h2>流れ</h2>
 	<ol class="box04">
-		<li><a href="#flow00">�K�v�Ȃ��̂�p��</a></li>
-		<li><a href="#flow01">heteml��SSH��ݒ肵�APoderosa��heteml�ɐڑ����A��������</a></li>
-		<li><a href="#flow02">����github�ɓo�^���悤</a></li>
-		<li><a href="#flow03">�o�^�ł������e�X�g���Ă݂悤</a></li>
-		<li><a href="#flow04">�����Agithub��push���悤</a></li>
-		<li><a href="#flow05">�����X�V������A�܂�add���ăR�~�b�g����push���Ă݂悤</a></li>
+		<li><a href="#flow00">必要なものを用意</a></li>
+		<li><a href="#flow01">hetemlでSSHを設定し、Poderosaでhetemlに接続し、鍵をつくる</a></li>
+		<li><a href="#flow02">鍵をgithubに登録しよう</a></li>
+		<li><a href="#flow03">登録できたかテストしてみよう</a></li>
+		<li><a href="#flow04">さぁ、githubにpushしよう</a></li>
+		<li><a href="#flow05">何か更新したら、またaddしてコミットしてpushしてみよう</a></li>
 	</ol>
 	<ol>
 	<li class="box03" id="flow00">
-		<h3>�K�v�Ȃ��̂�p��</h3>
+		<h3>必要なものを用意</h3>
 		<ul class="box03">
-			<li><a href="http://ja.poderosa.org/download.html" target="_blank">Poderosa</a>�i�C���X�g�[�����Ă����Ă��������j</li>
-			<li><a href="https://github.com/" target="_blank">github</a>�i�A�J�E���g���쐬���Ă��������j</li>
-			<li><a href="https://admin.heteml.jp/" target="_blank">heteml�̃R���p�l</a>�iheteml�_�񂵂Ă��������j</li>
+			<li><a href="http://ja.poderosa.org/download.html" target="_blank">Poderosa</a>（インストールしておいてください）</li>
+			<li><a href="https://github.com/" target="_blank">github</a>（アカウントを作成してください）</li>
+			<li><a href="https://admin.heteml.jp/" target="_blank">hetemlのコンパネ</a>（heteml契約してください）</li>
 			<li><a href="https://webftp.heteml.jp/dir/root/" target="_blank">hetemlFTP</a></li>
 		</ul>
 	</li>
 	<li class="box01" id="flow01">
-		<h3>heteml��SSH��ݒ肵�APoderosa��heteml�ɐڑ����A��������</h3>
+		<h3>hetemlでSSHを設定し、Poderosaでhetemlに接続し、鍵をつくる</h3>
 		<ol>
 			<li>
-				<p>heteml��SSH�ݒ������</p>
+				<p>hetemlでSSH設定をする</p>
 				<p><img src="img/5ac034839a7870d7b5cfc34b2bf83322.png" alt="" /></p>
 			</li>
 			<li>
-				<p>Poderosa���J���āA�t�@�C�����V�KTelnet/SSH�ڑ�����<strong>heteml��SSH���</strong>����͂��Aheteml�ɂȂ��B</p>
+				<p>Poderosaを開いて、ファイル＞新規Telnet/SSH接続＞で<strong>hetemlのSSH情報</strong>を入力し、hetemlにつなぐ。</p>
 				<p> <img src="img/d2c8c675202ed34e8437de1dad55b03e.png" alt="" /></p>
 			</li>
 			<li>
-				<p>�u<strong>�͂�</strong>�v</p>
+				<p>「<strong>はい</strong>」</p>
 				<p> <img src="img/04b1719cff925e3e39d93ae4a21de245.png" alt="" /></p>
 			</li>
 			<li>
-				<p>SSH��heteml�ɓ�������A���߂���<strong>pwd</strong>�ƑłB���������܂���ꏊ���킩��B</p>
+				<p>SSHでhetemlに入ったら、ためしに<strong>pwd</strong>と打つ。自分がいまいる場所がわかる。</p>
 				<p> <img src="img/ca8d849be6fd4fc3db50386eef630329.png" alt="" /></p>
 			</li>
 			<li>
-				<p>���߂���<strong>cd web</strong>�Ƃ����Ă݂�Bweb�t�H���_�Ɉړ��ł���B<br>
-�ړ�������܂�<strong>pwd</strong>�ƑłB���������܂���ꏊ���킩��B</p>
+				<p>ためしに<strong>cd web</strong>とかしてみる。webフォルダに移動できる。<br>
+移動したらまた<strong>pwd</strong>と打つ。自分がいまいる場所がわかる。</p>
 				<p> <img src="img/91914320f67a00d337a658e11cdaa076.png" alt="" /></p>
 			</li>
 			<li>
-				<p><strong>cd ../</strong> ���Ă���Ə�̃f�B���N�g���Ɉڂ��B�R�}���h�̗��K�����B</p>
+				<p><strong>cd ../</strong> ってすると上のディレクトリに移れる。コマンドの練習おわり。</p>
 				<p> <img src="img/b1dba7a7908a16d4f9827a67c7c4c7a1.png" alt="" /></p>
 			</li>
 			<li>
-				<p><strong>cd ~/.ssh</strong>�@���đłB<br>
-<em>No such file or directory�i����ȃt�@�C�����t�H���_���Ȃ���j</em>���Č���ꂽ��OK�B</p>
+				<p><strong>cd ~/.ssh</strong>　って打つ。<br>
+<em>No such file or directory（そんなファイルもフォルダもないよ）</em>って言われたらOK。</p>
 				<p> <img src="img/569d1db91ec92037f3908f9ae823b3fa.png" alt="" /></p>
 			</li>
 			<li>
-				<p>��������܂��B<strong>ssh-keygen -t rsa -C "�����̃��[���A�h���X"</strong></p>
+				<p>鍵をつくります。<strong>ssh-keygen -t rsa -C "自分のメールアドレス"</strong></p>
 				<p> <img src="img/16e7a49ab52c06ae22461c450779d461.png" alt="" /></p>
 			</li>
 			<li>
-				<p><em>����ۑ�����ꏊ��I��</em>���Č����܂����A���̂܂܂ł����̂ŁA<br />
-					<strong>�������͂�����Enter</strong>�B</p>
+				<p><em>鍵を保存する場所を選べ</em>って言われますが、そのままでいいので、<br />
+					<strong>何も入力せずにEnter</strong>。</p>
 				<p> <img src="img/90bbc6c857327e7acb4789aa4940b879.png" alt="" /></p>
 			</li>
 			<li>
-				<p>passphrases��<strong>�����ł�����Enter</strong>�����Ă悢<br />
-					�i�{���͉�������Ăق����Z�L�����e�B��͂������ǁA��ł߂�ǂ������Ȃ�j</p>
+				<p>passphrasesは<strong>何も打たずにEnter</strong>押してよい<br />
+					（本当は何か入れてほうがセキュリティ上はいいけど、後でめんどくさくなる）</p>
 				<p> <img src="img/6766dc6a2186110af449c758e7fd0a25.png" alt="" /></p>
 			</li>
 			<li>
-				<p><em>passphrases�͓����͂���</em>�A�ƌ�����̂�<strong>������xEnter</strong>������</p>
+				<p><em>passphrasesは二回入力しろ</em>、と言われるので<strong>もう一度Enter</strong>を押す</p>
 				<p> <img src="img/89e28f9a831146b70e289ee9da347744.png" alt="" /></p>
 			</li>
 			<li>
-				<p>�����ł��܂����B</p>
+				<p>鍵ができました。</p>
 				<p> <img src="img/4975d8a8db1ae570ff602bf1b25aecd6.png" alt="" /></p>
 			</li>
 		</ol>
 	</li>
 	<li class="box01" id="flow02">
-		<h3>����github�ɓo�^���悤</h3>
+		<h3>鍵をgithubに登録しよう</h3>
 		<ol>
 			<li>
-				<p> �o������������BhetemlFTP���J���āA/.ssh�t�H���_���� <em>id_rsa.pub</em> ���Ă��Ă�ق�������B</p>
+				<p> 出来た鍵を見る。hetemlFTPを開いて、/.sshフォルダ内の <em>id_rsa.pub</em> ってついてるほうを見る。</p>
 				<p> <img src="img/ff173c50ba22241b55a11804517cdfd2.png" alt="" /></p>
 				<p> <img src="img/c11ae83311116c6a12fe654fab99a244.png" alt="" /></p>
 			</li>
 			<li>
-				<p> hetemlFTP��ł͌����Ȃ��̂ŁA�u<strong>�_�E�����[�h</strong>�v�������Ď����̃f�X�N�g�b�v�ɕۑ�����B</p>
+				<p> hetemlFTP上では見られないので、「<strong>ダウンロード</strong>」を押して自分のデスクトップに保存する。</p>
 				<p> <img src="img/875aa2e7a6c5c57e98f67a5009d091fe.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �ۑ����ꂽ���B</p>
+				<p> 保存された鍵。</p>
 				<p> <img src="img/9e99afd5fd7de6c5c7bbcfbcf3bac233.png" alt="" style="width:200px;" /></p>
 			</li>
 			<li>
-				<p> ������or�G�ۂŊJ���Ċm�F�B</p>
+				<p> メモ帳or秀丸で開いて確認。</p>
 				<p> <img src="img/0fb6109ec45c01e6b94773a6763d2bd0.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���̌���o�^�������̂ŁAgithub�ɍs���B</p>
+				<p> この鍵を登録したいので、githubに行く。</p>
 				<p> <img src="img/379fa3ffaefc063ef883929cbf2523e3.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �E��̃Z�b�e�B���O�{�^������A<strong>SSH Keys</strong>�̃y�[�W�ɍs���B</p>
+				<p> 右上のセッティングボタンから、<strong>SSH Keys</strong>のページに行く。</p>
 				<p> <img src="img/58ab8027558f64bd21f13a52ce3c0a66.png" alt="" /></p>
 			</li>
 			<li>
-				<p> <strong>�R�s�y�B�ۑ��B</strong></p>
+				<p> <strong>コピペ。保存。</strong></p>
 				<p> <img src="img/a9db9785e56d3cfd501c938c6e344db7.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �ۑ��������ƃp�X���[�h�𕷂����̂ŁA<strong>heteml�̃p�X���[�h�����</strong>�B</p>
+				<p> 保存したあとパスワードを聞かれるので、<strong>hetemlのパスワードを入力</strong>。</p>
 				<p> <img src="img/d1bdba81842588e8cc7cc359394699ee.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �o�^�ł��܂����B�����github��heteml���ʐM�ł��܂��B</p>
+				<p> 登録できました。これでgithubとhetemlが通信できます。</p>
 				<p> <img src="img/7589a632418365f0f5e57412f9b8912a.png" alt="" /></p>
 			</li>
 		</ol>
 	</li>
 	<li class="box01" id="flow03">
-		<h3>�o�^�ł������e�X�g���Ă݂悤</h3>
+		<h3>登録できたかテストしてみよう</h3>
 		<ol>
 			<li>
-				<p><strong>$ ssh -T git@github.com</strong>�@�ƑłB</p>
+				<p><strong>$ ssh -T git@github.com</strong>　と打つ。</p>
 				<p> <img src="img/9605c850395a8f77dd4e363d62dbd449.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���߂炤���ƂȂ�<strong>yes</strong></p>
+				<p> ためらうことなく<strong>yes</strong></p>
 				<p> <img src="img/c327ba0703e17b1818fbe57b515e22d3.png" alt="" /></p>
 			</li>
 			<li>
-				<p> <em>Hi ���[�U�[���I</em>�ƌ���ꂽ�琬���I</p>
+				<p> <em>Hi ユーザー名！</em>と言われたら成功！</p>
 				<p> <img src="img/04f986b6339753e4e2cb70ad756b9faf.png" alt="" /></p>
 			</li>
 			<li>
-				<p> <strong>https://github.com/���[�U�[��</strong>�@�ŁA�u<strong>New repository</strong>�v���N���b�N</p>
+				<p> <strong>https://github.com/ユーザー名</strong>　で、「<strong>New repository</strong>」をクリック</p>
 				<p> <img src="img/eeb97e3c7645f5b0e22b6cff7dde57dc.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���|�W�g������<strong>���ł�����</strong>�B�����ł́u<strong>chcltntest.github.com</strong>�v�Ƃ���B<br />
-					<strong>Create repository</strong>���N���b�N�B</p>
+				<p> リポジトリ名は<strong>何でもいい</strong>。ここでは「<strong>chcltntest.github.com</strong>」とする。<br />
+					<strong>Create repository</strong>をクリック。</p>
 				<p> <img src="img/aa3a3a62e0a1476fe745fd6f11c4f4f3.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �Ȃ񂩂悭�킩��Ȃ���ʂɂȂ�B�����OK�B</p>
+				<p> なんかよくわかんない画面になる。これでOK。</p>
 				<p> <img src="img/0e6b6358d7ffdaf2ea98f59dde0f7fb1.png" alt="" /></p>
 			</li>
 		</ol>
 	</li>
 	<li class="box01" id="flow04">
-		<h3>git�̐ݒ�</h3>
+		<h3>gitの設定</h3>
 		<ol>
 			<li>
-				<p>���O�ƃ��[���A�h���X��git�ɐݒ肵�܂��B<br />
-				Poderosa�ŁA<strong>git config --global user.name "���Ȃ��̖��O"</strong>�@�Ƒł��܂��B</p>
+				<p>名前とメールアドレスをgitに設定します。<br />
+				Poderosaで、<strong>git config --global user.name "あなたの名前"</strong>　と打ちます。</p>
 			<p> <img src="img/4dd58d0f271405c55604ffd9d2f5a60e.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���ɁA<br />
-					<strong>git config --global user.email "���Ȃ��̃��[���A�h���X"</strong><br />
-					�Ƒł��܂��B</p>
+				<p> 次に、<br />
+					<strong>git config --global user.email "あなたのメールアドレス"</strong><br />
+					と打ちます。</p>
 				<p> <img src="img/cfbaaff442176cb0de6a1deb4dda3cca.png" alt="" /></p>
 			</li>
 		</ol>
 	</li>
 	<li class="box01" id="flow05">
-		<h3>�����Agithub��push���悤</h3>
+		<h3>さぁ、githubにpushしよう</h3>
 		<ol>
 			<li>
-				<p>Poderosa�ɖ߂��āAweb�t�H���_�Ɉڂ�B<strong>cd web</strong>�Ƒł��܂��B</p>
+				<p>Poderosaに戻って、webフォルダに移る。<strong>cd web</strong>と打ちます。</p>
 				<p><img src="img/1634554811bb1a5c858ad211f3c55465.png" alt="" /></p>
 			</li>
 			<li>
-				<p> web�t�H���_�̒��ɁA�uchcltntest.github.com�v�t�H���_�����܂��B<br />
-					�t�H���_�����ɂ�mkdir���g���܂��B<br />
-					<strong>mkdir chcltntest.github.com</strong> �Ƒł��܂��B</p>
+				<p> webフォルダの中に、「chcltntest.github.com」フォルダを作ります。<br />
+					フォルダを作るにはmkdirを使います。<br />
+					<strong>mkdir chcltntest.github.com</strong> と打ちます。</p>
 				<p> <img src="img/2dfed130874462d7e07f398256559747.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �f�B���N�g�����o�������m�F���Ă݂܂��傤�B</p>
+				<p> ディレクトリが出来たか確認してみましょう。</p>
 				<p> <img src="img/c6d25df1291d46e52021e30f7b22b92a.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �o�����f�B���N�g���Ɉړ����܂��B<br />
-					<strong>cd chcltntest.github.com</strong> �Ƒł��܂��B</p>
+				<p> 出来たディレクトリに移動します。<br />
+					<strong>cd chcltntest.github.com</strong> と打ちます。</p>
 				<p> <img src="img/bbbbb71355ed9fdaa7f4ea5aad530b7f.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ������git�Ǘ������\�A�Ɛ錾���܂��B<br />
-					�錾����ɂ́@<strong>git init</strong>�@�Ƒł��܂��B</p>
+				<p> ここをgit管理するよ―、と宣言します。<br />
+					宣言するには　<strong>git init</strong>　と打ちます。</p>
 				<p> <img src="img/323e440749e83494c794a3ad4f8df771.png" alt="" /></p>
 			</li>
 			<li>
-				<p> git�Ǘ����邽�߂̃t�H���_���o���܂����B<br />
-					����͍���A�G��Ȃ��悤�ɂ��܂��傤�B</p>
+				<p> git管理するためのフォルダが出来ました。<br />
+					これは今後、触らないようにしましょう。</p>
 				<p> <img src="img/b5bbea3cf3c6857b3e3e9850d2e68f51.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���߂���<strong>git status</strong>�Ƒł��Ă݂܂��B<br />
-					����́A�u����git�I�ɂ͂ǂ�������Ԃł����v�ƕ������̂ł��B</p>
+				<p> ためしに<strong>git status</strong>と打ってみます。<br />
+					これは、「いまgit的にはどういう状態ですか」と聞くものです。</p>
 				<p> <img src="img/5d636086b588c3bad3732eff050eadcb.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �ύX���ꂽ�t�@�C����ǉ����ꂽ�t�@�C�����܂��Ȃ��ꍇ�́A<br />
-					�u�R�~�b�g������͉̂����Ȃ��ł���v�ƌ����܂��i<em>nothing to commit</em>�j</p>
+				<p> 変更されたファイルや追加されたファイルがまだない場合は、<br />
+					「コミットするものは何もないですよ」と言われます（<em>nothing to commit</em>）</p>
 				<p> <img src="img/8f6108a4ba41d55d7f8c4cab8dbd6559.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���āA�����ŉ��������J���Ă݂܂��傤�B<br />
-					<strong>index.html���A�b�v</strong>���Ă݂܂��B</p>
+				<p> さて、ここで何かを公開してみましょう。<br />
+					<strong>index.htmlをアップ</strong>してみます。</p>
 				<p> <img src="img/e21d6bd402a6e9127bf332011d64fce7.png" alt="" /></p>
 				<p> <img src="img/f94a6a576ed79de3e16bdf457fc42483.png" alt="" /></p>
 				<p> <img src="img/c32a8981b4e667c1e76ddf97dc5a28e1.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���������ǁA<strong>git status</strong>�Ƒł��Ă݂܂��B<br />
-					���܃A�b�v����index.html���\������܂��B</p>
+				<p> もういちど、<strong>git status</strong>と打ってみます。<br />
+					いまアップしたindex.htmlが表示されます。</p>
 				<p> <img src="img/bd7c24a1072fae583d248aaaca7288c3.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �A�b�v�ł�����A�����Aadd���ăR�~�b�g����push���悤�B<br />
-					�܂��Aadd���܂��Badd�Ƃ́A�u���܂���R�~�b�g���܂���[�v�Ɛ錾���邱�Ƃł��B<br />
-					<strong>git add .</strong>�@�Ƒł��܂��B�u.�i�h�b�g�j�v�́u�ύX���ꂽ���̂��ׂāv�Ƃ����Ӗ��ł��B</p>
+				<p> アップできたら、さぁ、addしてコミットしてpushしよう。<br />
+					まず、addします。addとは、「いまからコミットしますよー」と宣言することです。<br />
+					<strong>git add .</strong>　と打ちます。「.（ドット）」は「変更されたものすべて」という意味です。</p>
 				<p> <img src="img/32b5787993509e7fd2d0f04040855c95.png" alt="" /></p>
 			</li>
 			<li>
-				<p> add�ɐ������Ă������ł܂���B<br />
-					��{�I�ɍ�����ʂ́A�������Ă����������Ă���܂���B<br />
-					�₽���ł��ˁB<br />
-					���l�ɂ͂������Ȃ��^�C�v�ł��B<br />
-					�Ƃɂ����������܂����B</p>
+				<p> addに成功しても何もでません。<br />
+					基本的に黒い画面は、成功しても何も言ってくれません。<br />
+					冷たいですね。<br />
+					恋人にはしたくないタイプです。<br />
+					とにかく成功しました。</p>
 				<p> <img src="img/b466a26b264a1937bfad635ad83f6575.png" alt="" /></p>
 			</li>
 			<li>
-				<p> add�����炷�����܃R�~�b�g���܂��傤�B<br />
-					<strong>git commit -m "�ŏ��̃R�~�b�g�ł��B"</strong><br />
-					�Ƒł��܂��B<br />
-					���b�Z�[�W�͌ォ��킩��₷�����̂������܂��傤�B</p>
+				<p> addしたらすぐさまコミットしましょう。<br />
+					<strong>git commit -m "最初のコミットです。"</strong><br />
+					と打ちます。<br />
+					メッセージは後からわかりやすいものを書きましょう。</p>
 				<p> <img src="img/c88f4c25cfda02362a7f7eb5bf7ba96f.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �����I�b�P�[�Ipush���܂��B<br />
-					�͂��߂Ă�push�̂Ƃ��ɂ͈ȉ���ł��܂��B<br />
-					<strong>git remote add origin git@github.com:���Ȃ���github�A�J�E���g��/���|�W�g����.git</strong><br />
-					2��ڈȍ~�͑ł��Ȃ��Ă悢�ł��B</p>
+				<p> 準備オッケー！pushします。<br />
+					はじめてのpushのときには以下を打ちます。<br />
+					<strong>git remote add origin git@github.com:あなたのgithubアカウント名/リポジトリ名.git</strong><br />
+					2回目以降は打たなくてよいです。</p>
 				<p> <img src="img/f39fc6e471fd1faa7321cd52f431fa88.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���������Bpush���܂��B<br />
-					<strong>git push -u origin master</strong>�@�Ƒł��܂��B<br />
-					git����Apush���ĂˁAorigin�igithub�j�� master�ibranch�j�ɁB�Ƃ����Ӗ��ł��B</p>
+				<p> 準備完了。pushします。<br />
+					<strong>git push -u origin master</strong>　と打ちます。<br />
+					gitさん、pushしてね、origin（github）の master（branch）に。という意味です。</p>
 				<p> <img src="img/867daff6c09d952a051602cf8794d12e.png" alt="" /></p>
 			</li>
 			<li>
-				<p> <strong>yes</strong>�Ƒł��܂��B</p>
+				<p> <strong>yes</strong>と打ちます。</p>
 				<p> <img src="img/27db137e02100b929a262816fca02a9d.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �����Ȃ�����push�����I<br />
-					<em>�uerror�v��urefused�v</em>�Ƃ����P�ꂪ�������玸�s�B</p>
+				<p> こうなったらpush完了！<br />
+					<em>「error」や「refused」</em>という単語が見えたら失敗。</p>
 				<p> <img src="img/acfb561d0750deeba7217b67fed97443.png" alt="" /></p>
 			</li>
 			<li>
-				<p> hetemlFTP���ł͂����Ȃ��Ă�͂�</p>
+				<p> hetemlFTP側ではこうなってるはず</p>
 				<p> <img src="img/a3dd60abe76553ece8126ba2e2437a4f.png" alt="" /></p>
 				<p> <img src="img/cbc87f3577fcb97cd8389aff6ddf5936.png" alt="" /></p>
 			</li>
 			<li>
-				<p> github���ł͂����Ȃ��Ă�͂�</p>
+				<p> github側ではこうなってるはず</p>
 				<p> <img src="img/7f95c97d44193d705828b552f91bc8a7.png" alt="" /></p>
 			</li>
 		</ol>
 	</li>
 	<li class="box01" id="flow06">
-		<h3>�����X�V������A�܂�add���ăR�~�b�g����push���Ă݂悤</h3>
+		<h3>何か更新したら、またaddしてコミットしてpushしてみよう</h3>
 		<ol>
 			<li>
-				<p> hetemlFTP�ł��傱���ƃt�@�C�����������Ă݂�B</p>
-				<p> ����������ۑ����܂��傤�B</p>
+				<p> hetemlFTPでちょこっとファイルをいじってみる。</p>
+				<p> いじったら保存しましょう。</p>
 				<p> <img src="img/58fa0a696e83f717b6535fad4ae72eca.png" alt="" /></p>
 			</li>
 			<li>
-				<p> Poderosa�Łu����git�I�ɂ͂ǂ��ł����v�ƕ����B<strong>git status</strong><br />
-					�u<em>index.html���C�����ꂽ��</em>�v�ƌ�����B</p>
+				<p> Poderosaで「いまgit的にはどうですか」と聞く。<strong>git status</strong><br />
+					「<em>index.htmlが修正されたよ</em>」と言われる。</p>
 				<p> <img src="img/7a9a36baedc221dab6d2738114bc3b9a.png" alt="" /></p>
 			</li>
 			<li>
-				<p> ���Ⴀ�����add���ăR�~�b�g���܂��B<br />
-					add�ƃR�~�b�g����x�ɂ��ɂ�&&�łȂ����OK�B<br />
-					<strong>git add . && git commit -m "�C���������R"</strong> �ƑłB</p>
+				<p> じゃあそれをaddしてコミットします。<br />
+					addとコミットを一度にやるには&&でつなげればOK。<br />
+					<strong>git add . && git commit -m "修正した理由"</strong> と打つ。</p>
 				<p> <img src="img/a54b4293d0bbf225861499ec5bded2dd.png" alt="" /></p>
 			</li>
 			<li>
-				<p> �ύX�������̂�push���܂��B<br />
+				<p> 変更したものをpushします。<br />
 					<strong>git push -u origin master</strong></p>
 				<p> <img src="img/67bb9c49de0eff01077d75f1d06af8ba.png" alt="" /></p>
 			</li>
 			<li>
-				<p> github��push����܂����B</p>
+				<p> githubにpushされました。</p>
 				<p> <img src="img/8ae20fa57c633713656bc2fdb5cad4b7.png" alt="" /></p>
 			</li>
 			<li>
-				<p> push���������́u<strong>history</strong>�v���猩���܂��B</p>
+				<p> pushした履歴は「<strong>history</strong>」から見られます。</p>
 				<p> <img src="img/0b23ad9c1e71a76e6a124f5f77bc0b84.png" alt="" /></p>
 			</li>
 		</ol>
@@ -396,16 +396,16 @@ ul{list-style:disc;list-style-position:inside;margin-left:1.5em;}
 </div>
 
 <div class="box">
-	<h2>�����̂܂Ƃ�</h2>
-	<p>�ŏ��Ɉ�x�����A����o�^����git�̐ݒ������B<br>
-���ꂪ�I�������add���ăR�~�b�g����push���J��Ԃ��A����ȗ���B<br>
-�����l�ŊJ������Ƃ��́A����pull��branch�Ȃǂ��g���č�Ƃ��܂��B</p>
+	<h2>今日のまとめ</h2>
+	<p>最初に一度だけ、鍵を登録してgitの設定をする。<br>
+それが終わったらaddしてコミットしてpushを繰り返す、が主な流れ。<br>
+複数人で開発するときは、他にpullやbranchなどを使って作業します。</p>
 </div>
 <div class="box">
-	<h2>���܂�</h2>
+	<h2>おまけ</h2>
 	<ul>
-		<li><a href="http://www.slideshare.net/to_ueda/git-6821390" target="_blank">�P�T���ł킩��Git����</a></li>
-		<li><a href="http://blog.asial.co.jp/894" target="_blank">�C���X�g�ł킩��Igit����̓���</a></li>
+		<li><a href="http://www.slideshare.net/to_ueda/git-6821390" target="_blank">１５分でわかるGit入門</a></li>
+		<li><a href="http://blog.asial.co.jp/894" target="_blank">イラストでわかる！git入門の入門</a></li>
 	</ul>
 </div>
 
